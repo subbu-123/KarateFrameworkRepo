@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.api.automation.ParallelRunnerWithCucumberReport
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.009 s <<< FAILURE! - in com.api.automation.ParallelRunnerWithCucumberReport
+runTestsParallel  Time elapsed: 12 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <30>
+	at com.api.automation.ParallelRunnerWithCucumberReport.runTestsParallel(ParallelRunnerWithCucumberReport.java:38)
+

@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.api.automation.ParallelRunnerWithCucumberReport" time="12.009" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Eclipse projects\KarateFramework\target\test-classes;D:\Eclipse projects\KarateFramework\target\classes;C:\Users\user\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\user\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\user\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\user\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\user\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\user\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\user\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\user\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\user\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\user\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\user\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\user\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\user\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\user\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\user\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\user\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\user\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\user\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\user\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\user\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\user\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\user\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\user\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\user\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\user\.m2\repository\net\masterthought\cucumber-reporting\5.7.2\cucumber-reporting-5.7.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\user\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\user\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\user\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\user\.m2\repository\org\jsoup\jsoup\1.15.1\jsoup-1.15.1.jar;C:\Users\user\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\user\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\user\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="dev"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.1.v20221102-1007\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire11150870502252495585\surefirebooter6743054011741795973.jar C:\Users\user\AppData\Local\Temp\surefire11150870502252495585 2023-03-21T14-43-11_412-jvmRun1 surefire732913193973768428tmp surefire_011112319036021682738tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Eclipse projects\KarateFramework\target\test-classes;D:\Eclipse projects\KarateFramework\target\classes;C:\Users\user\.m2\repository\com\intuit\karate\karate-junit5\1.3.1\karate-junit5-1.3.1.jar;C:\Users\user\.m2\repository\com\intuit\karate\karate-core\1.3.1\karate-core-1.3.1.jar;C:\Users\user\.m2\repository\org\graalvm\js\js-scriptengine\22.0.0.2\js-scriptengine-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\sdk\graal-sdk\22.0.0.2\graal-sdk-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\js\js\22.0.0.2\js-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\regex\regex\22.0.0.2\regex-22.0.0.2.jar;C:\Users\user\.m2\repository\org\graalvm\truffle\truffle-api\22.0.0.2\truffle-api-22.0.0.2.jar;C:\Users\user\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\user\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\user\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\user\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\user\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\user\.m2\repository\com\linecorp\armeria\armeria\1.18.0\armeria-1.18.0.jar;C:\Users\user\.m2\repository\io\micrometer\micrometer-core\1.9.2\micrometer-core-1.9.2.jar;C:\Users\user\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\user\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\user\.m2\repository\io\netty\netty-transport\4.1.79.Final\netty-transport-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-common\4.1.79.Final\netty-common-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-buffer\4.1.79.Final\netty-buffer-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver\4.1.79.Final\netty-resolver-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-haproxy\4.1.79.Final\netty-codec-haproxy-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec\4.1.79.Final\netty-codec-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http2\4.1.79.Final\netty-codec-http2-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-handler\4.1.79.Final\netty-handler-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-http\4.1.79.Final\netty-codec-http-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns\4.1.79.Final\netty-resolver-dns-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-dns\4.1.79.Final\netty-codec-dns-4.1.79.Final.jar;C:\Users\user\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-epoll\4.1.79.Final\netty-transport-native-epoll-4.1.79.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.79.Final\netty-transport-native-unix-common-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.79.Final\netty-transport-classes-epoll-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.79.Final\netty-resolver-dns-classes-macos-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.79.Final\netty-resolver-dns-native-macos-4.1.79.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-classes\2.0.53.Final\netty-tcnative-classes-2.0.53.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar;C:\Users\user\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.53.Final\netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar;C:\Users\user\.m2\repository\io\netty\netty-handler-proxy\4.1.79.Final\netty-handler-proxy-4.1.79.Final.jar;C:\Users\user\.m2\repository\io\netty\netty-codec-socks\4.1.79.Final\netty-codec-socks-4.1.79.Final.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.7.1\brotli4j-1.7.1.jar;C:\Users\user\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.7.1\native-windows-x86_64-1.7.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\user\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\user\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\user\.m2\repository\org\antlr\antlr4-runtime\4.9.3\antlr4-runtime-4.9.3.jar;C:\Users\user\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\user\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\user\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\user\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\user\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\user\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\user\.m2\repository\io\github\classgraph\classgraph\4.8.149\classgraph-4.8.149.jar;C:\Users\user\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\user\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\user\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\user\.m2\repository\net\masterthought\cucumber-reporting\5.7.2\cucumber-reporting-5.7.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar;C:\Users\user\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\user\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\user\.m2\repository\joda-time\joda-time\2.10.14\joda-time-2.10.14.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar;C:\Users\user\.m2\repository\org\jsoup\jsoup\1.15.1\jsoup-1.15.1.jar;C:\Users\user\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\user\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\user\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\user\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\user\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\user\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\user\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\user\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20211018.2\owasp-java-html-sanitizer-20211018.2.jar;C:\Users\user\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\user\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.1.v20221102-1007\jre"/>
+    <property name="tags" value="~@ignore"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Eclipse projects\KarateFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire11150870502252495585\surefirebooter6743054011741795973.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.1+10"/>
+    <property name="user.name" value="user"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-19.0.1+10"/>
+    <property name="localRepository" value="C:\Users\user\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.1"/>
+    <property name="user.dir" value="D:\Eclipse projects\KarateFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\user\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.1.v20221102-1007\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/user/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.1.v20221102-1007/jre/bin/server;C:/Users/user/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.1.v20221102-1007/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\OpenJDK11U-jdk_x64_windows_hotspot_11.0.18_10\jdk-11.0.18+10\bin;C:\Program Files\Git\cmd;C:\apache-maven-3.8.7\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Oracle\VirtualBox;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Users\user\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="19.0.1+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="location" value="com/api/automation"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="runTestsParallel" classname="com.api.automation.ParallelRunnerWithCucumberReport" time="12">
+    <failure message="expected: &lt;0&gt; but was: &lt;30&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0> but was: <30>
+	at com.api.automation.ParallelRunnerWithCucumberReport.runTestsParallel(ParallelRunnerWithCucumberReport.java:38)
+]]></failure>
+    <system-out><![CDATA[Deleteing files: target\cucumber-html-reports\css
+Deleteing files: target\cucumber-html-reports\fonts
+Deleteing files: target\cucumber-html-reports\images
+Deleteing files: target\cucumber-html-reports\js
+14:43:13.405 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': dev
+14:43:15.318 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:43:15.342 [main] DEBUG com.intuit.karate.Suite - waiting for 17 features to complete
+14:43:17.018 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.081 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.089 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.098 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.104 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.135 [pool-1-thread-4] INFO  com.intuit.karate - [print] ------------Base URL---------- 
+14:43:17.136 [pool-1-thread-3] INFO  com.intuit.karate - [print] ------------Base URL---------- 
+14:43:17.146 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../createJobInApp.feature')
+14:43:17.737 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.738 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":10,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:17.738 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/xml
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.739 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/upload
+1 > Content-Type: multipart/form-data; boundary=a2025ba56bc367bb
+1 > Content-Length: 229
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="garbage.txt"
+content-type: multipart/form-data; charset=UTF-8
+content-length: 44
+Completed: true
+IsInMemory: true
+
+
+14:43:17.739 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.784 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 172 milliseconds for url: http://localhost:8080/normal/webapi/upload
+14:43:17.785 [pool-1-thread-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 384 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:17.786 [pool-1-thread-4] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 597 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.786 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/fileUpload.feature:11
+When method post
+http call failed after 172 milliseconds for url: http://localhost:8080/normal/webapi/upload
+classpath:com/api/automation/getRequest/fileUpload.feature:11
+14:43:17.785 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 596 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.788 [pool-1-thread-3] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 599 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.788 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/deleteRequest/../createJobInApp.feature:34
+When method post
+http call failed after 384 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/deleteRequest/../createJobInApp.feature:34
+14:43:17.788 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/karateJsonpath.feature:9
+When method get
+http call failed after 596 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/karateJsonpath.feature:9
+14:43:17.789 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/getRequest.feature:21
+When method get
+http call failed after 597 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/getRequest.feature:21
+14:43:17.788 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/getRequest.feature:14
+When method get
+http call failed after 599 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/getRequest.feature:14
+14:43:17.793 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/deleteRequest/deleteRequest.feature:5
+* def createJob = callonce read('../createJobInApp.feature')
+http call failed after 384 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/deleteRequest/../createJobInApp.feature:34
+classpath:com/api/automation/deleteRequest/deleteRequest.feature:5
+14:43:17.799 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.813 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.819 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.821 [pool-1-thread-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 11 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.822 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/responseMatcher.feature:54
+When method get
+http call failed after 11 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:54
+14:43:17.824 [pool-1-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../createJobInApp.feature')
+14:43:17.862 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.881 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.884 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.886 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.891 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/xml
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.894 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.894 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/responseMatcher.feature:16
+When method get
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:16
+14:43:17.900 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.900 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 16 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.901 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/responseMatcher.feature:23
+When method get
+http call failed after 16 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:23
+14:43:17.904 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.907 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.909 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.910 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.912 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.911 [pool-1-thread-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.915 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.915 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/responseMatcher.feature:86
+When method get
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:86
+14:43:17.915 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/Validations.feature:21
+When method get
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/Validations.feature:21
+14:43:17.916 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 7 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.917 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/Validations.feature:9
+When method get
+http call failed after 7 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/Validations.feature:9
+14:43:17.922 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.932 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.937 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.940 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.940 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:17.942 [pool-1-thread-3] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.942 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:17.942 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/Validations.feature:32
+When method get
+http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/Validations.feature:32
+14:43:17.944 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/responseMatcher.feature:9
+When method get
+http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:9
+14:43:17.954 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.959 [pool-1-thread-5] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../createJobInApp.feature')
+14:43:17.962 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:17.974 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":68,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:17.977 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:17.982 [pool-1-thread-1] INFO  com.intuit.karate - [print] Google 20 
+14:43:17.982 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+When method post
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+14:43:17.984 [pool-1-thread-1] INFO  com.intuit.karate - [print] local variable 1 30 
+14:43:17.984 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/patchRequest/patchRequest.feature:5
+* def createJob = callonce read('../createJobInApp.feature')
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+classpath:com/api/automation/patchRequest/patchRequest.feature:5
+14:43:17.985 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../createJobInApp.feature')
+14:43:17.986 [pool-1-thread-1] INFO  com.intuit.karate - [print] local variable 2 600 
+14:43:17.999 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.039 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.045 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":28,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.060 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:43:18.064 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/all
+14:43:18.065 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":62,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.066 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/variables.feature:20
+When method get
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/variables.feature:20
+14:43:18.068 [pool-1-thread-4] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.069 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/../createJobInApp.feature:34
+When method post
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/getRequest/../createJobInApp.feature:34
+14:43:18.069 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/getRequest/queryParameter.feature:5
+* def createJob = callonce read('../createJobInApp.feature')
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/getRequest/../createJobInApp.feature:34
+classpath:com/api/automation/getRequest/queryParameter.feature:5
+14:43:18.075 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.083 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.089 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 229
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9766","jobTitle":"Bachelor in science","jobDescription":"Science student","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.094 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 235
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9778","jobTitle":"Bachelor in metallurgy","jobDescription":"metallurgy student","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.095 [pool-1-thread-4] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 8 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.095 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/postDataDriven.feature:70
+When method post
+http call failed after 8 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:70
+14:43:18.115 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 23 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.115 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/postDataDriven.feature:34
+When method post
+http call failed after 23 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:34
+14:43:18.130 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.138 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.141 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":12,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.144 [pool-1-thread-3] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 107 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.146 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+When method post
+http call failed after 107 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+14:43:18.148 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/patchRequest/patchRequest.feature:5
+* def createJob = callonce read('../createJobInApp.feature')
+http call failed after 107 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+classpath:com/api/automation/patchRequest/patchRequest.feature:5
+14:43:18.158 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.178 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "jobId": 21,
+  "jobTitle": "Bachelor in biotechnoloy",
+  "jobDescription": "Research in new bio medicines",
+  "experience": [
+    "Cipla",
+    "Zydus cadilla",
+    "Sun pharma",
+    "Torrent pharma"
+  ],
+  "project": [
+    {
+      "projectName": "Covid-19 bioserum antibodies",
+      "technology": [
+        "Gamma rays substitution",
+        "H2N2 DNA replication",
+        "Swine Flu antibodies",
+        "Prostate genosis with vasotubular anthropolgy"
+      ]
+    }
+  ]
+}
+ 
+14:43:18.182 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../createJobInApp.feature')
+14:43:18.188 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 48 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.188 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/postRequest.feature:34
+When method post
+http call failed after 48 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postRequest.feature:34
+14:43:18.196 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.314 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":38,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.315 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 114 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.316 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/schemaValidations.feature:35
+When method post
+http call failed after 114 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/schemaValidations.feature:35
+14:43:18.323 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 235
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9781","jobTitle":"Bachelor in metallurgy","jobDescription":"metallurgy student","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.322 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":25,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.324 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 362
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":21,"jobTitle":"Bachelor in biotechnoloy","jobDescription":"Research in new bio medicines","experience":["Cipla","Zydus cadilla","Sun pharma","Torrent pharma"],"project":[{"projectName":"Covid-19 bioserum antibodies","technology":["Gamma rays substitution","H2N2 DNA replication","Swine Flu antibodies","Prostate genosis with vasotubular anthropolgy"]}]}
+
+14:43:18.324 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.325 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 229
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":"9765","jobTitle":"Bachelor in science","jobDescription":"Science student","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.326 [pool-1-thread-4] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 140 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.326 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/postDataDriven.feature:70
+When method post
+http call failed after 140 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:70
+14:43:18.327 [pool-1-thread-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 135 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.327 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+When method post
+http call failed after 135 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+14:43:18.327 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/patchRequest/patchRequest.feature:5
+* def createJob = callonce read('../createJobInApp.feature')
+http call failed after 135 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+classpath:com/api/automation/patchRequest/patchRequest.feature:5
+14:43:18.328 [pool-1-thread-3] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 147 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.328 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/postRequest.feature:44
+When method post
+http call failed after 147 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postRequest.feature:44
+14:43:18.328 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 226
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":3,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.330 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.330 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/schemaValidations.feature:77
+When method post
+http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/schemaValidations.feature:77
+14:43:18.331 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.344 [pool-1-thread-5] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 174 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.345 [pool-1-thread-5] ERROR com.intuit.karate - classpath:com/api/automation/postRequest/postDataDriven.feature:34
+When method post
+http call failed after 174 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:34
+14:43:18.347 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.369 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../getToken.feature') {username:'baba yaga', password:'bhoot_nikal_ke_bhaga'}
+14:43:18.376 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.377 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":29,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.379 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9090/users/sign-up
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: localhost:9090
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"password":"bhoot_nikal_ke_bhaga","username":"baba yaga"}
+
+14:43:18.379 [pool-1-thread-1] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 13 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.380 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/putRequest/../createJobInAppWithParameter.feature:34
+When method post
+http call failed after 13 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/putRequest/../createJobInAppWithParameter.feature:34
+14:43:18.380 [pool-1-thread-1] ERROR com.intuit.karate - classpath:com/api/automation/putRequest/putRequest.feature:58
+* call read('../createJobInAppWithParameter.feature') {'URL':'http://localhost:8080/', 'PATH':'/normal/webapi/add', 'ID':'#(id)'}
+http call failed after 13 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/putRequest/../createJobInAppWithParameter.feature:34
+classpath:com/api/automation/putRequest/putRequest.feature:58
+14:43:18.381 [pool-1-thread-3] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 2 milliseconds for url: http://localhost:9090/users/sign-up
+14:43:18.382 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/secureAPI/../getToken.feature:17
+When method post
+http call failed after 2 milliseconds for url: http://localhost:9090/users/sign-up
+classpath:com/api/automation/secureAPI/../getToken.feature:17
+14:43:18.382 [pool-1-thread-3] ERROR com.intuit.karate - classpath:com/api/automation/secureAPI/secureGetRequest.feature:5
+* def token = callonce read('../getToken.feature') {username:'baba yaga', password:'bhoot_nikal_ke_bhaga'}
+http call failed after 2 milliseconds for url: http://localhost:9090/users/sign-up
+classpath:com/api/automation/secureAPI/../getToken.feature:17
+classpath:com/api/automation/secureAPI/secureGetRequest.feature:5
+14:43:18.384 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+14:43:18.386 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('../getToken.feature') {username:'baba yaga', password:'bhoot_nikal_ke_bhaga'}
+14:43:18.398 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9090/users/sign-up
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: localhost:9090
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"password":"bhoot_nikal_ke_bhaga","username":"baba yaga"}
+
+14:43:18.400 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 227
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":62,"jobTitle":"Bachelor in commerce","jobDescription":"To do accounting","experience":["Google","Apple","Sai krupa computer academy"],"project":[{"projectName":"Accounts for car dekho","technology":["Tally","PGDCA"]}]}
+
+14:43:18.401 [pool-1-thread-2] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 8 milliseconds for url: http://localhost:9090/users/sign-up
+14:43:18.402 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/secureAPI/../getToken.feature:17
+When method post
+http call failed after 8 milliseconds for url: http://localhost:9090/users/sign-up
+classpath:com/api/automation/secureAPI/../getToken.feature:17
+14:43:18.403 [pool-1-thread-2] ERROR com.intuit.karate - classpath:com/api/automation/secureAPI/secureGetRequest.feature:5
+* def token = callonce read('../getToken.feature') {username:'baba yaga', password:'bhoot_nikal_ke_bhaga'}
+http call failed after 8 milliseconds for url: http://localhost:9090/users/sign-up
+classpath:com/api/automation/secureAPI/../getToken.feature:17
+classpath:com/api/automation/secureAPI/secureGetRequest.feature:5
+14:43:18.405 [pool-1-thread-4] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/add
+14:43:18.406 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/putRequest/../createJobInApp.feature:34
+When method post
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/putRequest/../createJobInApp.feature:34
+14:43:18.406 [pool-1-thread-4] ERROR com.intuit.karate - classpath:com/api/automation/putRequest/putRequest.feature:12
+* def createJob = call read('../createJobInApp.feature')
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/putRequest/../createJobInApp.feature:34
+classpath:com/api/automation/putRequest/putRequest.feature:12
+---------------------------------------------------------
+feature: classpath:com/api/automation/deleteRequest/deleteRequest.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0.6610
+---------------------------------------------------------
+
+14:43:19.541 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 17 (13 remaining) classpath:com/api/automation/deleteRequest/deleteRequest.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/fileUpload.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0.6561
+---------------------------------------------------------
+
+14:43:19.700 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 17 (12 remaining) classpath:com/api/automation/getRequest/fileUpload.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/getRequest.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 1.3188
+---------------------------------------------------------
+
+14:43:19.989 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 6 of 17 (11 remaining) classpath:com/api/automation/getRequest/getRequest.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/karateJsonpath.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0.6676
+---------------------------------------------------------
+
+14:43:20.088 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 7 of 17 (10 remaining) classpath:com/api/automation/getRequest/karateJsonpath.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/queryParameter.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0.2527
+---------------------------------------------------------
+
+14:43:20.239 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 8 of 17 (9 remaining) classpath:com/api/automation/getRequest/queryParameter.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/responseMatcher.feature
+scenarios:  5 | passed:  0 | failed:  5 | time: 0.0577
+---------------------------------------------------------
+
+14:43:20.418 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 9 of 17 (8 remaining) classpath:com/api/automation/getRequest/responseMatcher.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/Validations.feature
+scenarios:  3 | passed:  0 | failed:  3 | time: 0.0176
+---------------------------------------------------------
+
+14:43:20.593 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 10 of 17 (7 remaining) classpath:com/api/automation/getRequest/Validations.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/getRequest/variables.feature
+scenarios:  2 | passed:  1 | failed:  1 | time: 0.1926
+---------------------------------------------------------
+
+14:43:20.808 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 11 of 17 (6 remaining) classpath:com/api/automation/getRequest/variables.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/patchRequest/patchRequest.feature
+scenarios:  3 | passed:  0 | failed:  3 | time: 0.5307
+---------------------------------------------------------
+
+14:43:21.018 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 12 of 17 (5 remaining) classpath:com/api/automation/patchRequest/patchRequest.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/postRequest/postDataDriven.feature
+scenarios:  4 | passed:  0 | failed:  4 | time: 0.5274
+---------------------------------------------------------
+
+14:43:21.118 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 13 of 17 (4 remaining) classpath:com/api/automation/postRequest/postDataDriven.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/postRequest/postRequest.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.2051
+---------------------------------------------------------
+
+14:43:21.201 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 14 of 17 (3 remaining) classpath:com/api/automation/postRequest/postRequest.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/postRequest/schemaValidations.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.1221
+---------------------------------------------------------
+
+14:43:21.378 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 15 of 17 (2 remaining) classpath:com/api/automation/postRequest/schemaValidations.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/putRequest/putRequest.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.0689
+---------------------------------------------------------
+
+14:43:21.655 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 16 of 17 (1 remaining) classpath:com/api/automation/putRequest/putRequest.feature
+---------------------------------------------------------
+feature: classpath:com/api/automation/secureAPI/secureGetRequest.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.0538
+---------------------------------------------------------
+
+14:43:21.809 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 17 of 17 (0 remaining) classpath:com/api/automation/secureAPI/secureGetRequest.feature
+Karate version: 1.3.1 | env: dev
+======================================================
+elapsed:   8.42 | threads:    5 | thread time: 5.33 
+features:    14 | skipped:    3 | efficiency: 0.13
+scenarios:   31 | passed:     1 | failed: 30
+======================================================
+>>> failed features:
+http call failed after 384 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/deleteRequest/../createJobInApp.feature:34
+classpath:com/api/automation/deleteRequest/deleteRequest.feature:5
+http call failed after 172 milliseconds for url: http://localhost:8080/normal/webapi/upload
+classpath:com/api/automation/getRequest/fileUpload.feature:11
+http call failed after 599 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/getRequest.feature:14
+http call failed after 597 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/getRequest.feature:21
+http call failed after 596 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/karateJsonpath.feature:9
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/getRequest/../createJobInApp.feature:34
+classpath:com/api/automation/getRequest/queryParameter.feature:5
+http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:9
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:16
+http call failed after 16 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:23
+http call failed after 11 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:54
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/responseMatcher.feature:86
+http call failed after 7 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/Validations.feature:9
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/Validations.feature:21
+http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/Validations.feature:32
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/all
+classpath:com/api/automation/getRequest/variables.feature:20
+http call failed after 4 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+classpath:com/api/automation/patchRequest/patchRequest.feature:5
+http call failed after 107 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+classpath:com/api/automation/patchRequest/patchRequest.feature:5
+http call failed after 135 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/patchRequest/../createJobInApp.feature:34
+classpath:com/api/automation/patchRequest/patchRequest.feature:5
+http call failed after 174 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:34
+http call failed after 23 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:34
+http call failed after 8 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:70
+http call failed after 140 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postDataDriven.feature:70
+http call failed after 48 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postRequest.feature:34
+http call failed after 147 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/postRequest.feature:44
+http call failed after 114 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/schemaValidations.feature:35
+http call failed after 3 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/postRequest/schemaValidations.feature:77
+http call failed after 6 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/putRequest/../createJobInApp.feature:34
+classpath:com/api/automation/putRequest/putRequest.feature:12
+http call failed after 13 milliseconds for url: http://localhost:8080/normal/webapi/add
+classpath:com/api/automation/putRequest/../createJobInAppWithParameter.feature:34
+classpath:com/api/automation/putRequest/putRequest.feature:58
+http call failed after 2 milliseconds for url: http://localhost:9090/users/sign-up
+classpath:com/api/automation/secureAPI/../getToken.feature:17
+classpath:com/api/automation/secureAPI/secureGetRequest.feature:5
+http call failed after 8 milliseconds for url: http://localhost:9090/users/sign-up
+classpath:com/api/automation/secureAPI/../getToken.feature:17
+classpath:com/api/automation/secureAPI/secureGetRequest.feature:5
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.3.1 | env: dev
+file:///D:/Eclipse%20projects/KarateFramework/target/karate-reports/karate-summary.html
+===================================================================
+
+target\karate-reports
+]]></system-out>
+    <system-err><![CDATA[Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.deleteRequest.deleteRequest.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.fileUpload.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.getRequest.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.karateJsonpath.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.queryParameter.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.responseMatcher.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.Validations.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.getRequest.variables.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.patchRequest.patchRequest.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.postRequest.postDataDriven.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.postRequest.postRequest.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.postRequest.schemaValidations.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.putRequest.putRequest.json' contains 1 feature(s)
+Mar 21, 2023 2:43:23 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'D:\Eclipse projects\KarateFramework\target\karate-reports\com.api.automation.secureAPI.secureGetRequest.json' contains 1 feature(s)
+]]></system-err>
+  </testcase>
+</testsuite>

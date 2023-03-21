@@ -1,0 +1,22 @@
+ {
+           "jobId": 21,
+           "jobTitle": "Bachelor in biotechnoloy",
+           "jobDescription": "Research in new bio medicines",
+           "experience": [
+               "Cipla",
+               "Zydus cadilla",
+               "Sun pharma",
+               "Torrent pharma"
+           ],
+           "project": [
+               {
+                   "projectName": "Covid-19 bioserum antibodies",
+                   "technology": [
+                       "Gamma rays substitution",
+                       "H2N2 DNA replication",
+                       "Swine Flu antibodies",
+                       "Prostate genosis with vasotubular anthropolgy"
+                   ]
+               }
+           ]
+       }
